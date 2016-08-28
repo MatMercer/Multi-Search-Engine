@@ -4,6 +4,7 @@ SEARCH_ENGINE_MAPPINGS = {
     bing_search: "https://www.bing.com/search?q=",
     yahoo_search: "https://search.yahoo.com/search?p=",
     duckduckgo_search: "https://duckduckgo.com/?q=",
+    qwant_search: "https://www.qwant.com/?q=",
     baidu_search: "https://www.baidu.com/s?ie=utf-8&wd=",
     gigablast_search: "https://www.gigablast.com/search?q=",
 };
