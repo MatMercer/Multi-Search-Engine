@@ -2,7 +2,8 @@
 SEARCH_ENGINE_MAPPINGS = {
     google_search: "https://www.google.com/search?q=",
     bing_search: "https://www.bing.com/search?q=",
-    duckduckgo_search: "https://duckduckgo.com/?q="
+    duckduckgo_search: "https://duckduckgo.com/?q=",
+    baidu_search: "https://www.baidu.com/s?ie=utf-8&wd="
 };
 
 $(document).ready(function() {
