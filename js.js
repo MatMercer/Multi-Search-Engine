@@ -1,7 +1,8 @@
 // The mappings for each search engine
 SEARCH_ENGINE_MAPPINGS = {
-    google_search: "https://www.google.com.br/search?q=",
-    bing_search: "https://www.bing.com/search?q=" 
+    google_search: "https://www.google.com/search?q=",
+    bing_search: "https://www.bing.com/search?q=",
+    duckduckgo_search: "https://duckduckgo.com/?q="
 };
 
 $(document).ready(function() {
