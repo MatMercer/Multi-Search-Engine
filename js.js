@@ -2,9 +2,10 @@
 SEARCH_ENGINE_MAPPINGS = {
     google_search: "https://www.google.com/search?q=",
     bing_search: "https://www.bing.com/search?q=",
+    yahoo_search: "https://search.yahoo.com/search?p=",
     duckduckgo_search: "https://duckduckgo.com/?q=",
     baidu_search: "https://www.baidu.com/s?ie=utf-8&wd=",
-    gigablast_search: "https://www.gigablast.com/search?q="
+    gigablast_search: "https://www.gigablast.com/search?q=",
 };
 
 $(document).ready(function() {
