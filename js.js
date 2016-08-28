@@ -1,17 +1,30 @@
-console.log("I'm alive...");
+// The mappings for each search engine
+SEARCH_ENGINE_MAPPINGS = {
+    google_search: "https://www.google.com.br/search?q=",
+    bing_search: "https://www.bing.com/search?q=" 
+};
 
 $(document).ready(function() {
-    $("#search-button").click(function(event) {
+    // Search button listener, checks if the search
+    // query isn't empty and search
+    $("#search-button").click(function(e) {
+        e.preventDefault();
         search = $("#search-query").val();
-        if(search === "") {
+        if (search === "") {
             search = "Test...";
         }
-        else {
-            searchEverywhere(search);
-        }
+        searchEverywhere(search);
     });
 });
 
+// Updates each IFrame with the desired search
+// query, it is based in the SEARCH_ENGINE_MAPPINGS
+// with the ID of the element as the key
 function searchEverywhere(query) {
-    
+    iframes = $("iframe");
+    for (i = 0; i < iframes.length; i++) {
+        f = iframes[i];
+
+        f.setAttribute("src", SEARCH_ENGINE_MAPPINGS[f.getAttribute("id")] + query);
+    }
 }

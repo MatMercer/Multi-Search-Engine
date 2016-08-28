@@ -20,19 +20,23 @@
         <h1>Multi Search Engine with IFrames</h1>
         <p>Make sure that you are in google chrome and installed this <a href="https://chrome.google.com/webstore/detail/gleekbfjekiniecknbkamfmkohkpodhe">extension.</a>
         </p>
-        <div class="form-group">
-            <label for="usr">Search Query:</label>
+        <form>
+            <label for="search">Search Query:</label>
             <input type="text" id="search-query" class="form-control" id="search">
-            <button type="button" id="search-button" class="btn btn-primary">Search through the infinity!</button>
-        </div>
+            <input type="submit" id="search-button" class="btn btn-primary" value="Search through the infinity!">
+        </form>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#tab_google_search">Google Search</a>
             </li>
-            <!--<li><a data-toggle="tab" href="#menu1"></a> </li>-->
+            <li><a data-toggle="tab" href="#tab_bing_search">Bing Search</a>
+            </li>
         </ul>
         <div class="tab-content">
             <div id="tab_google_search" class="tab-pane fade in active">
-                <iframe id="iframe_google_search" src="https://www.google.com" frameborder="0"></iframe>
+                <iframe id="google_search" src="https://www.google.com" frameborder="0"></iframe>
+            </div>
+            <div id="tab_bing_search" class="tab-pane fade in">
+                <iframe id="bing_search" src="https://www.bing.com" frameborder="0"></iframe>
             </div>
         </div>
     </div>
