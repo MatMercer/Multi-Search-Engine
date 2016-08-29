@@ -7,6 +7,7 @@ SEARCH_ENGINE_MAPPINGS = {
     qwant_search: "https://www.qwant.com/?q=",
     baidu_search: "https://www.baidu.com/s?ie=utf-8&wd=",
     gigablast_search: "https://www.gigablast.com/search?q=",
+    yandex_search: "https://www.yandex.com/search/?&text="
 };
 
 $(document).ready(function() {
